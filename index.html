@@ -24,14 +24,17 @@
         function convert(){
         let units =Number(document.getElementById("input").value)
         // let rate=0
-        if(units<=50){
-            rate = units*1
+       if(units<=100){
+            rate = units*0
         } 
-         else if(units>50 && units<=100){
-            rate=50+(units-50)*2
+         else if(units>100 && units<=200){
+            rate=0+(units-100)*2.25
+         }
+         else if(units>200 && units<=400){
+         rate=225+(units-200)*4.5
          }
          else
-         rate=150+(units-100)*3
+         rate=1125+(units-100)*6
          let result = document.getElementById("result")
         result.innerHTML = 'Your rate ='+rate
       
