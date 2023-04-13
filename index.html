@@ -33,8 +33,11 @@
          else if(units>200 && units<=400){
          rate=225+(units-200)*4.5
          }
-         else
+         else if(units>400 && units<=500){
          rate=1125+(units-100)*6
+         }
+         else
+         alert('Enter the readings below 500 slab differs after 500')
          let result = document.getElementById("result")
         result.innerHTML = 'Your rate ='+rate
       
